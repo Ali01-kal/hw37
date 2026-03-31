@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # homeflutter37
 
 A new Flutter project.
@@ -14,3 +15,6 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+=======
+# hw37
+>>>>>>> 7b9f9cde68ad3a7e25a34f4fa0c99ddb6ac9f86f
