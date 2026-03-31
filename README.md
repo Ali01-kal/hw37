@@ -4,19 +4,19 @@ This Flutter project demonstrates design patterns: Singleton & Factory.
 
 ---
 
-## ✅ Singleton vs get_it (DI)
+ Singleton vs get_it (DI)
 
-### 🔹 get_it деген не?
+###  get_it деген не?
 Service locator (Dependency Injection)
 
-### ➕ Singleton плюсы:
+###  Singleton плюсы:
 - Жеңіл жазылады
 - Қосымша кітапхана қажет емес
 - Глобально қолжетімді
 - Жылдам
 - Кішкентай проектке ыңғайлы
 
-### ➖ Singleton минусы:
+###  Singleton минусы:
 - Тест жасау қиын
 - Tight coupling
 - Dependency көрінбейді
@@ -30,7 +30,7 @@ Service locator (Dependency Injection)
 - Flexible
 - Clean architecture-ға сәйкес
 
-### ➖ get_it минусы:
+###  get_it минусы:
 - Қосымша setup керек
 - Бастапқыда қиын
 - Overkill (кіші проектке)
@@ -39,7 +39,7 @@ Service locator (Dependency Injection)
 
 ---
 
-## ✅ Unit Test – Singleton
+##  Unit Test – Singleton
 
 ```dart
 import 'package:flutter_test/flutter_test.dart';
