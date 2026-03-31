@@ -38,18 +38,3 @@ Service locator (Dependency Injection)
 - Debug кейде қиын
 
 ---
-
-## ✅ Unit Test – Singleton тек 1 рет жасалады
-
-```dart
-import 'package:flutter_test/flutter_test.dart';
-import 'package:your_project/core/logger/logger.dart';
-
-void main() {
-  test('Singleton test', () {
-    final logger1 = Logger();
-    final logger2 = Logger();
-
-    expect(identical(logger1, logger2), true);
-  });
-}
