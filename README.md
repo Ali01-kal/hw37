@@ -1,20 +1,55 @@
-<<<<<<< HEAD
-# homeflutter37
+# HW37 - Design Patterns in Flutter
 
-A new Flutter project.
+This Flutter project demonstrates design patterns: Singleton & Factory.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## ✅ Singleton vs get_it (DI)
 
-A few resources to get you started if this is your first Flutter project:
+### 🔹 get_it деген не?
+Service locator (Dependency Injection)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### ➕ Singleton плюсы:
+- Жеңіл жазылады
+- Қосымша кітапхана қажет емес
+- Глобально қолжетімді
+- Жылдам
+- Кішкентай проектке ыңғайлы
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-=======
-# hw37
->>>>>>> 7b9f9cde68ad3a7e25a34f4fa0c99ddb6ac9f86f
+### ➖ Singleton минусы:
+- Тест жасау қиын
+- Tight coupling
+- Dependency көрінбейді
+- Масштабта қиын
+- Mock жасау қиын
+
+### ➕ get_it плюсы:
+- Dependency анық көрінеді
+- Тест оңай (mock)
+- Масштабқа жақсы
+- Flexible
+- Clean architecture-ға сәйкес
+
+### ➖ get_it минусы:
+- Қосымша setup керек
+- Бастапқыда қиын
+- Overkill (кіші проектке)
+- Dependency басқару керек
+- Debug кейде қиын
+
+---
+
+## ✅ Unit Test – Singleton тек 1 рет жасалады
+
+```dart
+import 'package:flutter_test/flutter_test.dart';
+import 'package:your_project/core/logger/logger.dart';
+
+void main() {
+  test('Singleton test', () {
+    final logger1 = Logger();
+    final logger2 = Logger();
+
+    expect(identical(logger1, logger2), true);
+  });
+}
